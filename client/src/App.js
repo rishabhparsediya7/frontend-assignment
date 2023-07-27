@@ -47,11 +47,7 @@ export default function App() {
       }
     );
     if (response.statusText === "OK") {
-      console.log(response.data);
       setResult(response.data.result1.slice(0, 10));
-      console.log(response.data.result1.slice(0, 10));
-      console.log(result);
-      console.log(response.data.result2);
       setSmallBarData(response.data.result2);
       setShow(!show);
     } else {
